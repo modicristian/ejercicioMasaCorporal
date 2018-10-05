@@ -8,31 +8,43 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignTop="@+id/editText3"
+        android:text="EDAD:"
+        android:textSize="25sp" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="80dp"
         android:text="PESO: "
+        android:textAlignment="center"
         android:textSize="25sp" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="140dp"
         android:layout_height="34dp"
-        android:layout_alignTop="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
         android:layout_toEndOf="@+id/textView"
-        android:ems="10"
-        android:inputType="textMultiLine"
+        android:ems="4"
+        android:inputType="textMultiLine|number"
+        android:textAlignment="center"
         android:textSize="25sp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="36dp"
+        android:layout_width="30dp"
         android:layout_height="34dp"
         android:layout_alignTop="@+id/textView"
+        android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/editText2"
         android:text="Kg"
         android:textSize="25sp" />
@@ -43,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="152dp"
         android:text="ALTURA: "
         android:textSize="25sp" />
 
@@ -65,5 +77,37 @@
         android:layout_toEndOf="@+id/editText"
         android:text="Cm"
         android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:text="GENERO: "
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="185dp"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginStart="143dp"
+        android:entries="@array/genero"
+        android:spinnerMode="dialog" />
+
 
 </RelativeLayout>
