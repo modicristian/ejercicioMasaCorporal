@@ -7,17 +7,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignTop="@+id/editText3"
-        android:text="EDAD:"
-        android:textSize="25sp" />
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark">
+    </android.support.v7.widget.Toolbar>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtViewPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -29,85 +27,98 @@
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextPeso"
         android:layout_width="140dp"
         android:layout_height="34dp"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
+        android:layout_alignBottom="@+id/txtViewPeso"
+        android:layout_toEndOf="@+id/txtViewPeso"
         android:ems="4"
         android:inputType="textMultiLine|number"
         android:textAlignment="center"
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="30dp"
         android:layout_height="34dp"
-        android:layout_alignTop="@+id/textView"
+        android:layout_alignTop="@+id/txtViewPeso"
         android:layout_marginTop="0dp"
-        android:layout_toEndOf="@+id/editText2"
+        android:layout_toEndOf="@+id/editTextPeso"
         android:text="Kg"
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtViewAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
+        android:layout_alignEnd="@+id/txtViewPeso"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="160dp"
         android:text="ALTURA: "
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextAltura"
         android:layout_width="140dp"
         android:layout_height="34dp"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toEndOf="@+id/textView"
+        android:layout_alignTop="@+id/txtViewAltura"
+        android:layout_toEndOf="@+id/txtViewAltura"
         android:ems="10"
         android:inputType="textMultiLine"
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="41dp"
         android:layout_height="34dp"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toEndOf="@+id/editText"
+        android:layout_alignTop="@+id/txtViewAltura"
+        android:layout_toEndOf="@+id/editTextAltura"
         android:text="Cm"
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtViewGenero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
+        android:layout_alignEnd="@+id/txtViewAltura"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="240dp"
         android:text="GENERO: "
         android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="140dp"
-        android:layout_height="34dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="185dp"
-        android:layout_toEndOf="@+id/textView"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:textSize="25sp" />
-
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerGenero"
         android:layout_width="140dp"
         android:layout_height="34dp"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/textView5"
+        android:layout_alignTop="@+id/txtViewGenero"
         android:layout_marginStart="143dp"
         android:entries="@array/genero"
         android:spinnerMode="dialog" />
 
+    <TextView
+        android:id="@+id/txtViewEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtViewPeso"
+        android:layout_marginTop="320dp"
+        android:text="EDAD:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editTextEdad"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/txtViewEdad"
+        android:layout_toEndOf="@+id/txtViewEdad"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:text="CALCULAR" />
 
 </RelativeLayout>
