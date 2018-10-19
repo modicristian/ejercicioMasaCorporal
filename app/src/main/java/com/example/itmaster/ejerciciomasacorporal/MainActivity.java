@@ -49,13 +49,16 @@ public class MainActivity extends AppCompatActivity
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()){
             case android.R.id.home:
                 onBackPressed();
-                break;}
+                break;
+        }
         switch (item.getItemId()){
             case R.id.salir:
-                break;}
+                break;
+        }
         switch (item.getItemId()){
             case R.id.guardar:
                 break;
